@@ -18,12 +18,12 @@ fi
 git commit -m "$msg"
 
 # Push source and build repos.
-git push origin HEAD:master
+git push -f origin HEAD:master
 # Come Back up to the Project Root
 cd ..
 
 echo -e "\033[0;32mSyncronizing with source...\033[0m"
 git add .
 git commit -m "$msg"
-git push origin master
+git push -f origin master
 
